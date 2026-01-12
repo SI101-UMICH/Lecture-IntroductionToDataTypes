@@ -1,5 +1,5 @@
 {
-  "name": "SI101 Python Notebook",
+  "name": "SI101 Codespace",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "postCreateCommand": "python -m pip install --upgrade pip && pip install -r requirements.txt && python -m ipykernel install --user --name si101 --display-name \"Python (si101)\"",
   "customizations": {
@@ -7,7 +7,10 @@
       "extensions": [
         "ms-python.python",
         "ms-toolsai.jupyter"
-      ]
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
     }
   }
 }
